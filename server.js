@@ -64,6 +64,7 @@ function getCurrentGamePeriod() {
       isActive: true,
       timeUntilEnd: gameEndMinutes - currentTimeMinutes,
       currentRound: currentRound,
+      currentTime : nowUTC,
       roundTimeLeft: ROUND_DURATION_SECONDS - roundElapsedSeconds,
       gameStartTime: new Date(nowUTC.getFullYear(), nowUTC.getMonth(), nowUTC.getDate(), GAME_START_HOUR, GAME_START_MINUTE),
       gameEndTime: new Date(nowUTC.getFullYear(), nowUTC.getMonth(), nowUTC.getDate(), GAME_START_HOUR + 12, GAME_START_MINUTE)
